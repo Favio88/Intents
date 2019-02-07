@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Intents</string>
+    <string name="itt1">ACTION_DIAL</string>
+    <string name="itt2">ACTION_CALL</string>
+    <string name="itt3">ACTION_VIEW</string>
+    <string name="itt4">ACTION_SEND</string>
+    <string name="itt5">ACTION_AIRPLANE_MODE_CHANGED</string>
+    <string name="itt6">ACTION_BATERY_CHANGED</string>
+    <string name="itt7">ACTION_SEARCH</string>
+
+</resources>

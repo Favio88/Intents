@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Main2Activity">
+
+    <Button
+        android:id="@+id/btn_itt1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/itt1"/>
+
+    <Button
+        android:id="@+id/btn_itt2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/itt2"/>
+
+    <Button
+        android:id="@+id/btn_itt3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/itt3"/>
+
+    <Button
+        android:id="@+id/btn_itt4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/itt4"/>
+
+    <Button
+        android:id="@+id/btn_itt5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/itt5"/>
+
+    <Button
+        android:id="@+id/btn_itt6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/itt6"/>
+
+    <Button
+        android:id="@+id/btn_itt7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/itt7"/>
+
+    <TextView
+        android:id="@+id/txtv_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"/>
+
+</LinearLayout>
