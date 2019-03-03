@@ -9,6 +9,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView txtv_contador;
+    String miNombre="Favio";
+    int miEdad=31;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +30,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
 
-                Intent itt_ActivityMain2=new Intent(MainActivity.this, Main2Activity.class);
-                itt_ActivityMain2.putExtra("Nombre","Favio");
-                startActivity(itt_ActivityMain2);
+                Intent myIntent=new Intent(MainActivity.this, Main2Activity.class);
+
+                Bundle myBundle=new Bundle();
+                myBundle.putString("Nombre",miNombre);
+                myBundle.putInt("Edad",miEdad);
+
+                myIntent.putExtras(myBundle);
+
+                startActivity(myIntent);
 
                 finish();
 

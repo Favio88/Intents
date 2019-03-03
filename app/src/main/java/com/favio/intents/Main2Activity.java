@@ -14,7 +14,9 @@ import android.widget.TextView;
 public class Main2Activity extends AppCompatActivity implements View.OnClickListener {
 
     Button btn_itt1, btn_itt2, btn_itt3, btn_itt4, btn_itt5, btn_itt6, btn_itt7;
-    TextView txtv_nombre;
+    TextView tv_nombre, tv_edad;
+    String miNombre;
+    int miEdad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +43,15 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         btn_itt6.setOnClickListener(this);
         btn_itt7.setOnClickListener(this);
 
-        txtv_nombre = findViewById(R.id.txtv_nombre);
+        tv_nombre = findViewById(R.id.tv_nombre);
+        tv_edad = findViewById(R.id.tv_edad);
 
-        String nombre = getIntent().getStringExtra("Nombre");
-        txtv_nombre.setText(nombre);
+        Bundle myBundle=this.getIntent().getExtras();
+        miNombre=myBundle.getString("Nombre");
+        miEdad=myBundle.getInt("Edad");
+
+        tv_nombre.setText(miNombre);
+        tv_edad.setText(Integer.toString(miEdad));
     }
 
     @Override
